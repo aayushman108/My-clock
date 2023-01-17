@@ -14,9 +14,9 @@ function myFunction(){
     document.querySelector("#seconds").innerHTML=second;
     document.querySelector("#year").innerHTML=year;
     document.querySelector("#month").innerHTML=month+1;
-    document.querySelector("#date").innerHTML=date+1;
-    document.querySelector("#hour-hand").style.transform=rotate(`${hourInDeg}deg`);
-    document.querySelector("#minute-hand").style.transform=  rotate(`${minuteInDeg}deg`);
-    document.querySelector("#second-hand").style.transform= rotate(`${secondInDeg}deg`);
+    document.querySelector("#date").innerHTML=date;
+    document.querySelector("#hour-hand").style.transform=`rotate(${hourInDeg}deg)`;
+    document.querySelector("#minute-hand").style.transform=  `rotate(${minuteInDeg}deg)`;
+    document.querySelector("#second-hand").style.transform= `rotate(${secondInDeg}deg)`;
 }
 setInterval(myFunction, 1000);
