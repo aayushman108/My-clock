@@ -7,9 +7,16 @@ function myFunction(){
     const month = time.getMonth();
     const date = time.getDate();
     const secondInDeg= second*360/60;
-    const minuteInDeg= minute*360/60 ;
-    const hourInDeg= hour*360/12;
-    document.querySelector("#hours").innerHTML=hour;
+    const minuteInDeg= (minute+ second/60)*360/60 ;
+    const hourInDeg= (hour+ minute/60 +second/3600)*360/12;
+    if(hour>12){
+        document.querySelector("#hours").innerHTML=hour-12;
+        document.querySelector("#Dn").innerHTML=" PM";
+    }
+    else{
+        document.querySelector("#hours").innerHTML=hour;
+        document.querySelector("#Dn").innerHTML=" AM";
+    }
     document.querySelector("#minutes").innerHTML=minute;
     document.querySelector("#seconds").innerHTML=second;
     document.querySelector("#year").innerHTML=year;

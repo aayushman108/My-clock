@@ -5,13 +5,12 @@
 }
 
 body{
-    background-image: url(forClock.jpg);
+   /* background-image: url(forClock.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
+    background-color: rgb(38, 38, 97);
 }
-.full_time{
-    
-}
+
 .classic-clock{
     position:absolute;
     height: 500px;
@@ -24,12 +23,14 @@ body{
 }
 .clock{
     position:absolute;
-    background-color: azure;
     bottom: 50px;
     left: 150px;
     line-height: 30px;
     width: 200px;
     z-index:1; 
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
     text-align: center;
     
 }
@@ -43,8 +44,7 @@ body{
     line-height: 30px;
     width:200px;
     position: relative;
-    color: rgb(9, 9, 9);
-    background-color: grey;
+    color: whitesmoke;
     font-size: 20px;
     font-weight: bolder;
     text-align: center;
@@ -62,7 +62,7 @@ body{
     position: absolute;
     height: 150px;
     width: 6px ;
-    background-color: black;
+    background-color: rgb(39, 7, 7);
     top: 100px;
     left: 247px;
     transform-origin: bottom center;
@@ -74,7 +74,7 @@ body{
     position: absolute;
     height: 200px;
     width: 4px;
-    background-color: black;
+    background-color: rgb(39, 7, 7);
     top: 50px;
     left: 248px;
     transform-origin: bottom center;
@@ -87,7 +87,7 @@ body{
     position: absolute;
     height: 220px;
     width: 2px;
-    background-color: black;
+    background-color: rgb(39, 7, 7);
     top: 30px;
     left: 249px;
     transform-origin: bottom center;
