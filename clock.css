@@ -10,6 +10,7 @@ body{
     background-repeat: no-repeat;
 }
 .full_time{
+    
 }
 .classic-clock{
     position:absolute;
@@ -36,4 +37,60 @@ body{
 .any li {
     list-style-type: none;
     display: inline;
+}
+.digital-clock{
+    display: inline-block;
+    line-height: 30px;
+    width:200px;
+    position: relative;
+    color: rgb(9, 9, 9);
+    background-color: grey;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    top: 630px;
+    left: 650px;
+}
+
+.anyName{
+    list-style-type: none;
+}
+.anyName li{
+    display: inline;
+}
+#hour-hand{
+    position: absolute;
+    height: 150px;
+    width: 6px ;
+    background-color: black;
+    top: 100px;
+    left: 247px;
+    transform-origin: bottom center;
+    z-index: 2;
+
+}
+
+#minute-hand{
+    position: absolute;
+    height: 200px;
+    width: 4px;
+    background-color: black;
+    top: 50px;
+    left: 248px;
+    transform-origin: bottom center;
+    z-index: 2;
+
+
+}
+
+#second-hand{
+    position: absolute;
+    height: 220px;
+    width: 2px;
+    background-color: black;
+    top: 30px;
+    left: 249px;
+    transform-origin: bottom center;
+    z-index: 2;
+    
 }
