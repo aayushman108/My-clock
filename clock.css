@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(forClock.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.full_time{
+}
+.classic-clock{
+    position:absolute;
+    height: 500px;
+    width: 500px;
+    border:1px solid rgb(17, 100, 9,);
+    background-color: rgba(191, 187, 187, 0.3);
+    border-radius: 50%;
+    top:100px;
+    left: 500px;
+}
+.clock{
+    position:absolute;
+    background-color: azure;
+    bottom: 50px;
+    left: 150px;
+    line-height: 30px;
+    width: 200px;
+    z-index:1; 
+    text-align: center;
+    
+}
+
+.any li {
+    list-style-type: none;
+    display: inline;
+}
